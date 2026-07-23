@@ -3,7 +3,7 @@ import platform
 import color
 
 DESCRIPTION = "Termux & System Info"
-GROUP_ID = 5  # Miscellaneous Tools
+GROUP_ID = 2  # Miscellaneous Tools
 COLOR = color.GREEN
 
 def run():
