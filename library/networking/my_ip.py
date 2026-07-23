@@ -3,7 +3,7 @@ import json
 import color
 
 DESCRIPTION = "Check Public IP Address"
-GROUP_ID = 1  # Network Tools Group
+GROUP_ID = 2  # Network Tools Group
 COLOR = color.CYAN
 
 def run():
