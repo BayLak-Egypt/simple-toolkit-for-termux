@@ -1,0 +1,9 @@
+requests
+colorama
+rich
+beautifulsoup4
+scapy
+cryptography
+paramiko
+psutil
+pyfiglet
