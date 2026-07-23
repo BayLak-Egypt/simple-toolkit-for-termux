@@ -12,6 +12,13 @@
   </tr>
 </table>
 
-<img width="44" height="44" alt="images" src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" />
-
-
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" width="44" height="44" alt="Termux Icon">
+    </td>
+    <td valign="middle">
+      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=20C997&width=150&lines=Termux" alt="Typing Termux" />
+    </td>
+  </tr>
+</table>
