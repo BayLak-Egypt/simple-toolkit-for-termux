@@ -13,7 +13,7 @@
 </table>
 
 ---
-A modern and advanced modular framework designed for Termux. Features a smart plugin system to easily organize and run tools, an interactive colored interface, auto-library dependency checker, and smooth menu navigation. 🛠️✨
+ A powerful and elegant modular framework for Termux. Features a smart plugin system for effortless tool management, stunning custom UI banners, auto-dependency verification, and smooth navigation. Level up your workflow! 🛠️✨
 ---
 
 
