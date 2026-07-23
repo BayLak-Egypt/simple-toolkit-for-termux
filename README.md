@@ -22,3 +22,4 @@
     </td>
   </tr>
 </table>
+<img width="44" height="44" alt="Linux" src="https://github.com/user-attachments/assets/09bcdd70-8422-48da-b7bb-f41af7c4318a" />
