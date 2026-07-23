@@ -2,7 +2,7 @@ import socket
 import color
 
 DESCRIPTION = "IP Basic Port Scanner"
-GROUP_ID = 2
+GROUP_ID = 1
 COLOR = color.YELLOW
 
 def run():
