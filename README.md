@@ -4,4 +4,3 @@
 <img width="44" height="44" alt="images" src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" />
 
 
-<img width="457" height="306" alt="Screenshot from 2026-07-23 23-22-56" src="https://github.com/user-attachments/assets/a2e90db7-1d7c-4952-aa06-c256c530010f" />
