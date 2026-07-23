@@ -42,7 +42,7 @@ def show_star_banner():
     """عرض البانر باللون الثابت الذي لا يتغير عند التنقل بين الصفحات"""
     if not os.path.exists(STAR_TXT_PATH):
         print(f"{color.BLUE}=========================================={color.RESET}")
-        print(f"{color.WHITE}         Termux Modular Tool Kit          {color.RESET}")
+        print(f"{color.WHITE}         Simple-ToolKit-For-Termux          {color.RESET}")
         print(f"{color.BLUE}=========================================={color.RESET}\n")
         return
     try:
