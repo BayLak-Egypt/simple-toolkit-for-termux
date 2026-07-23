@@ -11,7 +11,7 @@
     },
     "3": {
         "title": "Encryption Tools",
-        "description": "Miscellaneous and utility scripts",
+        "description": "Tools for data encryption, decryption, and hashing",
         "color": "YELLOW"
     },
        "4": {
