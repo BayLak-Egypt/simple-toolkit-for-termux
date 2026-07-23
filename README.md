@@ -19,18 +19,7 @@
 
 
 
-<table>
-  <tr>
-    <!-- Termux -->
-    <td align="center" valign="middle">
-      <img src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" width="50" height="50" alt="Termux Icon">
-    </td>
-    <td valign="middle" width="180">
-      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=20C997&width=160&lines=Termux" alt="Typing Termux" />
-    </td>
-
-    <!-- Linux -->
-   <p align="left">
+<p align="left">
   <!-- Termux -->
   <img src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" width="40" height="40" valign="middle">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=20C997&width=140&lines=Termux" valign="middle" />
@@ -41,4 +30,3 @@
   <img src="https://github.com/user-attachments/assets/09bcdd70-8422-48da-b7bb-f41af7c4318a" width="40" height="40" valign="middle">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=20C997&width=140&lines=Linux" valign="middle" />
 </p>
-</table>
