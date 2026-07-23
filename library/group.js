@@ -15,7 +15,7 @@
         "color": "YELLOW"
     },
        "4": {
-        "title": "General Tools",
+            "title": "Generator Tools",
         "description": "Miscellaneous and utility scripts",
         "color": "YELLOW"
     }
