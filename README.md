@@ -32,3 +32,14 @@
     </td>
   </tr>
 </table>
+
+### 📥 Installation & Setup
+
+Follow these steps to install and run the toolkit on Termux:
+
+1. Update and upgrade your Termux packages:
+   ```bash
+   pkg update && pkg upgrade -y
+
+
+
