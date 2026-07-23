@@ -336,7 +336,7 @@ def main():
         check_status_str = f"{color.GREEN}true{color.RESET}" if current_auto_check else f"{color.RED}false{color.RESET}"
         print(f"\n  [{auto_check_option_num}] auto check and download library ({check_status_str})")
         print(f"{color.BLUE}[{checker_button_num}] check and download library{color.RESET}")
-        print(f"{color.YELLOW}[{update_option_num}] Update Tool{color.RESET}")
+        print(f"{color.YELLOW}[{update_option_num}] Update {color.RESET}")
         print(f"{color.CYAN}[{about_option_num}] About{color.RESET}")
         print(f"{color.RED}[0] Exit{color.RESET}")
         print(f"{color.BLUE}=========================================={color.RESET}")
