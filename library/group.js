@@ -19,4 +19,10 @@
         "description": "Miscellaneous and utility scripts",
         "color": "YELLOW"
     }
+    ,
+       "4": {
+        "title": "General Tools",
+        "description": "Miscellaneous and utility scripts",
+        "color": "YELLOW"
+    }
 }
