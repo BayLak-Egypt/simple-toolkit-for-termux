@@ -7,3 +7,4 @@ cryptography
 paramiko
 psutil
 pyfiglet
+pillow
