@@ -3,7 +3,7 @@ import platform
 import color
 
 DESCRIPTION = "Host Latency & Ping Check"
-GROUP_ID = 2  # Inspection & Analysis Tools
+GROUP_ID = 1  # Inspection & Analysis Tools
 COLOR = color.YELLOW
 
 def run():
