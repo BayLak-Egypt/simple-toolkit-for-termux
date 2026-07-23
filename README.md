@@ -5,9 +5,9 @@
     </td>
     <td valign="middle">
       <h1>simple-toolkit-for-termux</h1>
-      <a href="https://t.me/YOUR_TELEGRAM_USERNAME"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-      <a href="https://www.youtube.com/@YOUR_YOUTUBE_CHANNEL"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
-      <a href="HTTPS://YOUR_BLOGGER_URL.blogspot.com"><img src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" alt="Blogger"></a>
+      <a href="t.me/Baylaks"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+      <a href="https://www.youtube.com/@baylak-egypt/videos"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
+      <a href="https://baylak-egypt.blogspot.com/"><img src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" alt="Blogger"></a>
     </td>
   </tr>
 </table>
