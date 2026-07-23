@@ -43,11 +43,11 @@ Follow these steps one by one to install and run the toolkit on Termux:
 
 1. Update and upgrade your Termux packages:
    ```bash
-   pkg update
+  
+   pkg update && pkg upgrade -y
+
    ```
-   ```bash
-   pkg upgrade -y
-   ```
+ 
 
 2. Install required system dependencies (Git and Python):
    ```bash
@@ -84,8 +84,5 @@ Simply drop your Python script inside the `library/` folder. Ensure it contains 
 
 ---
 **Made with ❤️ by BayLak (Egypt 🇪🇬)**
-   ```bash
-   pkg update && pkg upgrade -y
-
 
 
