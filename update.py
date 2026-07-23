@@ -6,11 +6,13 @@ import urllib.parse
 import urllib.error
 import requests
 import color
+
 REPO_OWNER = "BayLak-Egypt"
 REPO_NAME = "simple-toolkit-for-termux"
 BRANCH = "main"
+
 def calculate_github_sha1(file_path):
-    """حساب الـ SHA-1 بنفس طريقة Git"""
+    """Calculate SHA-1 hash in the exact same way Git does"""
     if not os.path.exists(file_path):
         return None
     try:
@@ -20,8 +22,9 @@ def calculate_github_sha1(file_path):
         return hashlib.sha1(header + content).hexdigest()
     except Exception:
         return None
+
 def download_file(url, target_path):
-    """تنزيل الملف مع إنشاء المجلدات وترميز المسافات"""
+    """Download file while creating required directories and encoding space characters"""
     try:
         os.makedirs(os.path.dirname(target_path), exist_ok=True)
         safe_url = urllib.parse.quote(url, safe=':/?&=#%')
@@ -30,10 +33,11 @@ def download_file(url, target_path):
             f.write(response.read())
         return True
     except Exception as e:
-        print(f"{color.RED}[!] خطأ أثناء تحميل {target_path}: {e}{color.RESET}")
+        print(f"{color.RED}[!] Error downloading {target_path}: {e}{color.RESET}")
         return False
+
 def fetch_repo_tree():
-    """جلب شجرة الملفات من جيت هاب مع استثناء library"""
+    """Fetch the repository file tree from GitHub excluding the 'library' directory"""
     api_url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/git/trees/{BRANCH}?recursive=1"
     headers = {
         "User-Agent": "Toolkit-Auto-Updater",
@@ -58,20 +62,21 @@ def fetch_repo_tree():
                         "download_url": raw_url
                     }
         else:
-            print(f"{color.RED}[!] خطأ من سيرفر GitHub API ({response.status_code}){color.RESET}")
+            print(f"{color.RED}[!] GitHub API server error ({response.status_code}){color.RESET}")
     except Exception as e:
-        print(f"{color.RED}[!] فشل الاتصال بالسيرفر: {e}{color.RESET}")
+        print(f"{color.RED}[!] Server connection failed: {e}{color.RESET}")
     return files_manifest
+
 def run():
-    """دالة التحديث الحقيقية"""
+    """Main update function"""
     os.system('clear' if os.name == 'posix' else 'cls')
     print(f"{color.BLUE}=========================================={color.RESET}")
-    print(f"{color.WHITE}            ميزة التحديث (Update)         {color.RESET}")
+    print(f"{color.WHITE}             Update Feature               {color.RESET}")
     print(f"{color.BLUE}=========================================={color.RESET}\n")
-    print(f"{color.GREEN}[+] جارٍ الاتصال بـ GitHub والتحقق من التحديثات...{color.RESET}")
+    print(f"{color.GREEN}[+] Connecting to GitHub and checking for updates...{color.RESET}")
     manifest = fetch_repo_tree()
     if not manifest:
-        print(f"{color.RED}[!] تعذر جلب ملفات التحديث. تحقق من الاتصال بالإنترنت.{color.RESET}")
+        print(f"{color.RED}[!] Unable to fetch update files. Please check your internet connection.{color.RESET}")
         print(f"\n{color.BLUE}=========================================={color.RESET}")
         return
     downloaded_count = 0
@@ -82,26 +87,27 @@ def run():
         expected_sha = file_info.get("sha")
         url = file_info.get("download_url")
         if not os.path.exists(target_path):
-            print(f"{color.YELLOW}[+] ملف جديد مكتشف: {target_path}{color.RESET}")
+            print(f"{color.YELLOW}[+] New file detected: {target_path}{color.RESET}")
             if download_file(url, target_path):
-                print(f"{color.GREEN}[✓] تم التحميل: {target_path}{color.RESET}")
+                print(f"{color.GREEN}[✓] Downloaded: {target_path}{color.RESET}")
                 downloaded_count += 1
         elif expected_sha:
             local_sha = calculate_github_sha1(target_path)
             if local_sha != expected_sha:
-                print(f"{color.YELLOW}[!] تحديث جديد للملف: {target_path}{color.RESET}")
+                print(f"{color.YELLOW}[!] New update available for file: {target_path}{color.RESET}")
                 if download_file(url, target_path):
-                    print(f"{color.GREEN}[✓] تم التحديث: {target_path}{color.RESET}")
+                    print(f"{color.GREEN}[✓] Updated: {target_path}{color.RESET}")
                     updated_count += 1
             else:
                 up_to_date_count += 1
     print(f"\n{color.BLUE}------------------------------------------{color.RESET}")
     if downloaded_count == 0 and updated_count == 0:
-        print(f"{color.GREEN}[✓] نسختك الحالية هي أحدث نسخة بالفعل!{color.RESET}")
+        print(f"{color.GREEN}[✓] Your current version is already up to date!{color.RESET}")
     else:
-        print(f"{color.GREEN}[✓] تم التحديث بنجاح!{color.RESET}")
-        print(f"{color.WHITE}- ملفات جديدة: {downloaded_count}{color.RESET}")
-        print(f"{color.WHITE}- ملفات تم تحديثها: {updated_count}{color.RESET}")
+        print(f"{color.GREEN}[✓] Update completed successfully!{color.RESET}")
+        print(f"{color.WHITE}- New files downloaded: {downloaded_count}{color.RESET}")
+        print(f"{color.WHITE}- Files updated: {updated_count}{color.RESET}")
     print(f"{color.BLUE}=========================================={color.RESET}")
+
 if __name__ == "__main__":
     run()
