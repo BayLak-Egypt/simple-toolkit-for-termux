@@ -19,23 +19,22 @@
 
 
 
-
 <table>
   <tr>
+    <!-- Termux -->
     <td align="center" valign="middle">
       <img src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" width="50" height="50" alt="Termux Icon">
     </td>
-    <td valign="middle">
-      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=20C997&width=130&lines=Termux" alt="Typing Termux" />
+    <td valign="middle" width="180">
+      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=20C997&width=160&lines=Termux" alt="Typing Termux" />
     </td>
 
-    <td width="30"></td>
-
+    <!-- Linux -->
     <td align="center" valign="middle">
       <img src="https://github.com/user-attachments/assets/09bcdd70-8422-48da-b7bb-f41af7c4318a" width="50" height="50" alt="Linux Icon">
     </td>
-    <td valign="middle">
-      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=20C997&width=130&lines=Linux" alt="Typing Linux" />
+    <td valign="middle" width="180">
+      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=20C997&width=160&lines=Linux" alt="Typing Linux" />
     </td>
   </tr>
 </table>
