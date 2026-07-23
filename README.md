@@ -36,11 +36,54 @@
   </tr>
 </table>
 
+
 ### 📥 Installation & Setup
 
-Follow these steps to install and run the toolkit on Termux:
+Follow these steps one by one to install and run the toolkit on Termux:
 
 1. Update and upgrade your Termux packages:
+   ```bash
+   pkg update
+   ```
+   ```bash
+   pkg upgrade -y
+   ```
+
+2. Install required system dependencies (Git and Python):
+   ```bash
+   pkg install git -y
+   ```
+   ```bash
+   pkg install python -y
+   ```
+
+3. Clone the repository from GitHub:
+   ```bash
+   git clone [https://github.com/BayLak-Egypt/simple-toolkit-for-termux.git](https://github.com/BayLak-Egypt/simple-toolkit-for-termux.git)
+   ```
+
+4. Navigate into the tools directory:
+   ```bash
+   cd simple-toolkit-for-termux
+   ```
+
+5. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. Run the tool:
+   ```bash
+   python main.py
+   ```
+
+---
+
+### 📂 How to Add New Tools?
+Simply drop your Python script inside the `library/` folder. Ensure it contains a `run()` function, a `DESCRIPTION`, and a `GROUP_ID` to integrate it seamlessly into the toolkit.
+
+---
+**Made with ❤️ by BayLak (Egypt 🇪🇬)**
    ```bash
    pkg update && pkg upgrade -y
 
