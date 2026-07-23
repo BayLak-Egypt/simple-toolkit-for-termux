@@ -22,7 +22,6 @@
 
 <table>
   <tr>
-    <!-- العنصر الأول: Termux -->
     <td align="center" valign="middle">
       <img src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" width="50" height="50" alt="Termux Icon">
     </td>
@@ -30,10 +29,8 @@
       <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=20C997&width=130&lines=Termux" alt="Typing Termux" />
     </td>
 
-    <!-- مسافة فاصلة بين العنصرين -->
     <td width="30"></td>
 
-    <!-- العنصر الثاني: Linux -->
     <td align="center" valign="middle">
       <img src="https://github.com/user-attachments/assets/09bcdd70-8422-48da-b7bb-f41af7c4318a" width="50" height="50" alt="Linux Icon">
     </td>
