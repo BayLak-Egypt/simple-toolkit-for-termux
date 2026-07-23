@@ -16,18 +16,25 @@
 
 
 
+<table>
+  <tr>
+    <!-- Termux -->
+    <td align="center" valign="middle">
+      <img src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" width="40" height="40" alt="Termux">
+    </td>
+    <td valign="middle">
+      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=20C997&width=180&lines=Termux" alt="Typing Termux">
+    </td>
 
+    <!-- مسافة فاصلة بين العمودين -->
+    <td width="40"></td>
 
-<div style="display: flex; align-items: center; gap: 20px;">
-  <!-- Termux -->
-  <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://github.com/user-attachments/assets/66ca2b39-871c-4f9d-bda6-624c99735bd4" width="40" height="40" alt="Termux">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=20C997&width=110&lines=Termux" alt="Typing Termux">
-  </div>
-
-  <!-- Linux -->
-  <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://github.com/user-attachments/assets/09bcdd70-8422-48da-b7bb-f41af7c4318a" width="40" height="40" alt="Linux">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=20C997&width=100&lines=Linux" alt="Typing Linux">
-  </div>
-</div>
+    <!-- Linux -->
+    <td align="center" valign="middle">
+      <img src="https://github.com/user-attachments/assets/09bcdd70-8422-48da-b7bb-f41af7c4318a" width="40" height="40" alt="Linux">
+    </td>
+    <td valign="middle">
+      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=20C997&width=180&lines=Linux" alt="Typing Linux">
+    </td>
+  </tr>
+</table>
