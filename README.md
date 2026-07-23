@@ -11,6 +11,7 @@
     </td>
   </tr>
 </table>
+
 ---
 A modern and advanced modular framework designed for Termux. Features a smart plugin system to easily organize and run tools, an interactive colored interface, auto-library dependency checker, and smooth menu navigation. 🛠️✨
 ---
