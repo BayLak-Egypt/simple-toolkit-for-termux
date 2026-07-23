@@ -26,7 +26,11 @@ def calculate_github_sha1(file_path):
 def download_file(url, target_path):
     """Download file while creating required directories and encoding space characters"""
     try:
-        os.makedirs(os.path.dirname(target_path), exist_ok=True)
+        # FIX: Check if there is a directory structure before calling makedirs
+        dir_name = os.path.dirname(target_path)
+        if dir_name: 
+            os.makedirs(dir_name, exist_ok=True)
+            
         safe_url = urllib.parse.quote(url, safe=':/?&=#%')
         req = urllib.request.Request(safe_url, headers={'User-Agent': 'Toolkit-Auto-Updater'})
         with urllib.request.urlopen(req, timeout=25) as response, open(target_path, 'wb') as f:
