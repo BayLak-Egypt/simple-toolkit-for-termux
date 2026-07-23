@@ -3,7 +3,7 @@ import re
 import color
 
 DESCRIPTION = "Extract Links from Webpage"
-GROUP_ID = 1  # Network & Data Extraction Tools
+GROUP_ID = 5  # Network & Data Extraction Tools
 COLOR = color.MAGENTA
 
 def run():
