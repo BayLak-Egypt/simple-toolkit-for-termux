@@ -59,7 +59,7 @@ Follow these steps one by one to install and run the toolkit on Termux:
 
 3. Clone the repository from GitHub:
    ```bash
-   git clone [https://github.com/BayLak-Egypt/simple-toolkit-for-termux.git](https://github.com/BayLak-Egypt/simple-toolkit-for-termux.git)
+   git clone https://github.com/BayLak-Egypt/simple-toolkit-for-termux.git
    ```
 
 4. Navigate into the tools directory:
