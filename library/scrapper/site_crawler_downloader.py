@@ -12,7 +12,6 @@ def crawl_and_download(start_url: str, max_pages: int = 20):
     """Crawl a website within the same domain and download its pages matching the site structure."""
     parsed_start = urllib.parse.urlparse(start_url)
     domain = parsed_start.netloc
-    scheme = parsed_start.scheme
     
     if not domain:
         print(color.color_text("[!] Invalid domain extracted from URL.", color.RED))
@@ -27,7 +26,7 @@ def crawl_and_download(start_url: str, max_pages: int = 20):
     queue = [start_url]
     
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
 
     print(color.color_text(f"\n[+] Starting crawler on domain: {color.color_text(domain, color.YELLOW)}", color.GREEN))
@@ -75,21 +74,29 @@ def crawl_and_download(start_url: str, max_pages: int = 20):
                 downloaded_count += 1
                 print(f"    -> Saved to: {local_path}")
 
-                # Extract internal links for further crawling
-                links = re.findall(r'href=["\'](.*?)["\']', html_content, re.IGNORECASE)
-                for link in links:
+                # Extract internal links using robust Regex matching all href patterns
+                raw_links = re.findall(r'href\s*=\s*(?:["\']([^"\']*)["\']|([^\s>]+))', html_content, re.IGNORECASE)
+                flattened_links = [link[0] if link[0] else link[1] for link in raw_links]
+
+                for link in flattened_links:
+                    if not link or link.startswith(('#', 'javascript:', 'mailto:', 'tel:')):
+                        continue
+
                     # Resolve relative links
                     full_link = urllib.parse.urljoin(current_url, link)
                     parsed_link = urllib.parse.urlparse(full_link)
                     
-                    # Clean URL fragment/query if needed or keep standard
+                    # Avoid heavy assets or unwanted extensions
+                    if parsed_link.path.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.css', '.js', '.pdf', '.zip', '.mp4', '.mp3', '.svg', '.ico', '.xml', '.rss')):
+                        continue
+
+                    # Clean URL fragment and parameters for unique collection
                     clean_link = f"{parsed_link.scheme}://{parsed_link.netloc}{parsed_link.path}"
+                    clean_link = clean_link.rstrip('/')
                     
                     # Check if link belongs to the same domain and hasn't been visited
                     if parsed_link.netloc == domain and clean_link not in visited and clean_link not in queue:
-                        # Avoid heavy assets or extensions
-                        if not re.search(r'\.(png|jpg|jpeg|gif|css|js|pdf|zip|mp4|mp3|svg|ico)$', parsed_link.path, re.IGNORECASE):
-                            queue.append(clean_link)
+                        queue.append(clean_link)
 
         except Exception as e:
             print(color.color_text(f"    [!] Failed to fetch {current_url}: {e}", color.RED))
