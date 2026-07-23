@@ -3,7 +3,7 @@ import string
 import color
 
 DESCRIPTION = "Random Password Generator"
-GROUP_ID = 3  # Miscellaneous Tools
+GROUP_ID = 4  # Miscellaneous Tools
 COLOR = color.GREEN
 
 def run():
