@@ -87,4 +87,4 @@ Simply drop your Python script inside the `library/` folder. Ensure it contains 
 
 <img width="40" height="20" alt="Egypt_flag_with_big_coat_of_arms" src="https://github.com/user-attachments/assets/637a365d-98e8-4a47-814c-11965370d212" />
 
-Made with ❤️ by BayLak (Egypt<img src="https://github.com/user-attachments/assets/637a365d-98e8-4a47-814c-11965370d212" width="35" height="15" alt="Egypt flag"/>)
+**Made with ❤️ by BayLak (Egypt<img src="https://github.com/user-attachments/assets/637a365d-98e8-4a47-814c-11965370d212" width="35" height="15" alt="Egypt flag"/>)**
