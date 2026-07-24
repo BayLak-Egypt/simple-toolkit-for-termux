@@ -89,8 +89,8 @@ Simply drop your Python script inside the `library/` folder. Ensure it contains 
 
 
 
-[!CAUTION]
-Important Legal and Educational Disclaimer:
+>[!CAUTION]
+>Important Legal and Educational Disclaimer:
 The following content is provided for educational and awareness purposes only, aimed at raising security awareness and understanding how to protect systems and data. The author or developer is completely absolved of any responsibility for any misuse, illegal, or harmful use of this information and tools. Using this knowledge in any disruptive or unauthorized activity is solely your own personal responsibility.
 
 
