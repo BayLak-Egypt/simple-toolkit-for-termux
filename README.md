@@ -85,5 +85,5 @@ Simply drop your Python script inside the `library/` folder. Ensure it contains 
 ---
 **Made with ❤️ by BayLak (Egypt 🇪🇬)**
 
-<img width="50" height="50" alt="Egypt_flag_with_big_coat_of_arms" src="https://github.com/user-attachments/assets/c33eb199-842a-48f1-b0c2-14f39662b525" />
+<img width="70" height="50" alt="Egypt_flag_with_big_coat_of_arms" src="https://github.com/user-attachments/assets/637a365d-98e8-4a47-814c-11965370d212" />
 
