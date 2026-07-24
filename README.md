@@ -82,7 +82,7 @@ Follow these steps one by one to install and run the toolkit on Termux:
 ### 📂 How to Add New Tools?
 Simply drop your Python script inside the `library/` folder. Ensure it contains a `run()` function, a `DESCRIPTION`, and a `GROUP_ID` to integrate it seamlessly into the toolkit.
 
-
+---
 
 
 
