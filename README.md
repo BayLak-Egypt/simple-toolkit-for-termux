@@ -83,8 +83,5 @@ Follow these steps one by one to install and run the toolkit on Termux:
 Simply drop your Python script inside the `library/` folder. Ensure it contains a `run()` function, a `DESCRIPTION`, and a `GROUP_ID` to integrate it seamlessly into the toolkit.
 
 ---
-**Made with ❤️ by BayLak (Egypt herer image)**
 
-<img width="40" height="20" alt="Egypt_flag_with_big_coat_of_arms" src="https://github.com/user-attachments/assets/637a365d-98e8-4a47-814c-11965370d212" />
-
-**Made with ❤️ by BayLak (Egypt<img src="https://github.com/user-attachments/assets/637a365d-98e8-4a47-814c-11965370d212" width="35" height="15" alt="Egypt flag"/>)**
+**Made with ❤️ by BayLak (Egypt <img src="https://github.com/user-attachments/assets/637a365d-98e8-4a47-814c-11965370d212" width="35" height="15" alt="Egypt flag"/>)**
